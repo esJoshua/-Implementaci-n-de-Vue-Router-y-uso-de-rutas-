@@ -17,16 +17,16 @@
           <!-- MENU DE NAVEGACION -->
           <ul class="nav navbar-nav ml-auto" id="menu-v8">
             <li class="nav-item" role="presentation">
-              <router-link to="/">portada</router-link> |
+              <router-link to="/">portada</router-link>
             </li>
             <li class="nav-item" role="presentation">
-              <router-link to="/sobremi">sobre mí</router-link> |
+              <router-link to="/sobremi">sobre mí</router-link>
             </li>
             <li class="nav-item" role="presentation">
-              <router-link to="/contacto">contacto</router-link> |
+              <router-link to="/contacto">contacto</router-link>
             </li>
             <li class="nav-item" role="presentation">
-              <router-link to="/post/1">último post</router-link> |
+              <router-link to="/post/1">último post</router-link>
             </li>
           </ul>
         </div>

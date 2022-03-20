@@ -67,9 +67,7 @@
 </template>
 
 <script>
-export default {
-  name: "PortadaView",
-};
+export default {};
 </script>
 
 <style></style>
