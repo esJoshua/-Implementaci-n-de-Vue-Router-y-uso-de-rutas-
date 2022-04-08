@@ -43,7 +43,7 @@ const routes = [
   },
   {
     path: "*",
-    /* beforeEnter: (to, from, next) => next("/404"), */
+    beforeEnter: (to, from, next) => next("/404"),
   },
   {
     path: "/404",

@@ -11,7 +11,8 @@
           <div class="col-md-10 col-lg-8 mx-auto">
             <div class="site-heading">
               <h1>V8</h1>
-              <span class="subheading">Noticias y reseñas de automóviles</span>
+              <!-- <span class="subheading">Noticias y reseñas de automóviles</span> -->
+              <span class="subheading">Prueba</span>
             </div>
           </div>
         </div>
