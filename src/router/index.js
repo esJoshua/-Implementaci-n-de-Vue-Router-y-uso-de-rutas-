@@ -23,12 +23,7 @@ const routes = [
     alias: ["/contac*"],
     component: () => import("../views/ContactoView.vue"),
   },
-  {
-    path: "/pepito",
-    name: "pepito",
-    component: () => import("../views/PepitoView.vue"),
-  },
-  {
+    {
     path: "/post",
     name: "post",
     component: () => import("../views/PostView.vue"),
