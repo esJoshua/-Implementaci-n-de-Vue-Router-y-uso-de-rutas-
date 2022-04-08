@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand">V8</a
+        <router-link to="/"> <a class="navbar-brand">V8</a> </router-link
         ><button
           data-toggle="collapse"
           data-target="#navbarResponsive"
@@ -33,8 +33,9 @@
       </div>
     </nav>
     <!-- ROUTER VIEW QUE CARGARÁ LAS VISTAS (INICIO, SOBRE MÍ, CONTACTO, ETC.) -->
-    <router-view />
-    <!-- <router-view></router-view> -->
+    <transition name="stepview">
+      <router-view />
+    </transition>
   </div>
 </template>
 
@@ -43,15 +44,16 @@ export default {};
 </script>
 
 <style scoped>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 #menu-v8 a {
   text-shadow: 1px 1px #000;
+}
+
+.stepview-enter-active,
+.stepview-leave-active {
+  transition: opacity 1s;
+}
+.stepview-enter,
+.stepview-leave-to {
+  opacity: 0.5;
 }
 </style>

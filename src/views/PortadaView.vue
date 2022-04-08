@@ -19,7 +19,7 @@
     </header>
     <div class="container">
       <div class="row">
-        <div class="col-md-10 col-lg-8">
+        <div class="col-md-10 col-lg-8 mx-auto">
           <div class="post-preview">
             <router-link to="/post/1">
               <h2 class="post-title">

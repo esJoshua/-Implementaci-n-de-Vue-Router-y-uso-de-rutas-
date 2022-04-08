@@ -29,7 +29,7 @@ const routes = [
     component: () => import("../views/PostView.vue"),
     children: [
       {
-        path: "1",
+        path: ":id",
         name: "post1",
         alias: "*",
         component: () => import("../views/ArticuloView.vue"),
