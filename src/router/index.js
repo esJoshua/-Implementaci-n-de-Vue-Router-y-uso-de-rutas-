@@ -38,6 +38,10 @@ const routes = [
   },
   {
     path: "*",
+    beforeEnter: (to, from, next) => next("/404"),
+  },
+  {
+    path: "/404",
     name: "ErrorView",
     component: () => import("../views/ErrorView.vue"),
   },
