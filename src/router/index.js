@@ -24,6 +24,11 @@ const routes = [
     component: () => import("../views/ContactoView.vue"),
   },
   {
+    path: "/pepito",
+    name: "pepito",
+    component: () => import("../views/PepitoView.vue"),
+  },
+  {
     path: "/post",
     name: "post",
     component: () => import("../views/PostView.vue"),
@@ -38,7 +43,7 @@ const routes = [
   },
   {
     path: "*",
-    beforeEnter: (to, from, next) => next("/404"),
+    /* beforeEnter: (to, from, next) => next("/404"), */
   },
   {
     path: "/404",
